@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>how it works</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head><div class="logo">
+   		   		<img src="static/images/logo_design.png">
+   	</div>
+<body background="static/images/beg2.jpg"><div class="main">
+	 <ul>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li ><a href="{{ url_for('home') }}">HOME</a></li>
+		<li><a href="{{ url_for('hiw') }}">HOW IT WORKS?</a></li>
+		<li><a href="{{ url_for('contact') }}">CONTACT US</a></li>
+    <li class="active"><a href="{{ url_for('login') }}">LOGIN</a></li>
+	</ul>
+</div><br><br><br><br><br>
+	<br>
+	<br><br><br><h1> Login</h1><br><br>
+	
+	<form class="login">
+  		<input type="text" placeholder="Username">
+  		<input type="password" placeholder="Password">
+  		<button>Login</button>
+	</form>
+
+</body>
+
+</html>

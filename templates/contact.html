@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>how it works</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+</head><div class="logo">
+   		   		<img src="static/images/logo_design.png">
+   	</div>
+<body background="static/images/beg2.jpg"><div class="main">
+	 <ul>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<li><a href="{{ url_for('home') }}">HOME</a></li>
+		<li><a href="{{ url_for('hiw') }}">HOW IT WORKS?</a></li>
+		<li class="active"><a href="#{{ url_for('contact') }}">CONTACT US</a></li>
+    <li><a href="{{ url_for('login') }}">LOGIN</a></li>
+	</ul>
+<br><br><br><br><br><br>
+<table align="center">
+	<div class="container">
+  <form action="action_page.php">
+
+    <tr><td><label for="fname">First Name</label></td>
+    <td><input type="text" id="fname" name="firstname" placeholder="Your name.."></td>
+</tr>
+    <br><br>
+    <tr><td><label for="lname">Last Name</label></td>
+    <td><input type="text" id="lname" name="lastname" placeholder="Your last name.."></td>
+</tr>
+<br><br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+<br><br>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<br><br>
+    <input type="submit" value="Submit">
+<br><br>
+  </form>
+</div>
+</table>
+</body>
+
+</html>
